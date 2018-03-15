@@ -1,4 +1,4 @@
-package algorithm.inhereitance;
+package algorithm.inheritance;
 
 import java.util.Collection;
 

@@ -55,26 +55,26 @@ import algorithm.Measurement;
 
         // Uncomment this test and make it pass reusing as much code as
         // possible from other classes that are available in the Composition folder
-        //@Test
-        //public void HighPassSummingAggregator_Applys_Filter() {
-        //    PointsAggregator aggregator = new PointsAggregator(measurements, new HighPassFilter(), new SummingStrategy());
+        @Test
+        public void HighPassSummingAggregator_Applys_Filter() {
+            PointsAggregator aggregator = new PointsAggregator(measurements, new HighPassFilter(), new SummingStrategy());
 
-        //    PointsAggregator result = aggregator.aggregate();
+            Measurement result = aggregator.aggregate();
 
-		// assertEquals(105, result.getX());
-		// assertEquals(15, result.getY());
-        //}
+		 assertEquals(105, result.getX());
+		 assertEquals(15, result.getY());
+        }
 
         /// Uncomment this test and make it pass by building a new class to
         /// hide the "composition" of strategies and filters ...
-        //@Test
-        //public void HighPassSummingAggregator_Applys_Filter() {
-        //		HighPassSummingAggregator aggregator = new HighPassSummingAggregator(measurements);
+        @Test
+        public void HighPassSummingAggregator_Applys_Filter2() {
+			HighPassSummingAggregator aggregator = new HighPassSummingAggregator(measurements);
 
-        //		HighPassSummingAggregator result = aggregator.aggregate();
+			Measurement result = aggregator.aggregate();
 
-		//		assertEquals(105, result.getX());
-		// assertEquals(15, result.getY());
-        //}
+			assertEquals(105, result.getX());
+			assertEquals(15, result.getY());
+        }
 
 }

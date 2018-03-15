@@ -1,4 +1,4 @@
-package algorithm.inhereitance;
+package algorithm.inheritance;
 
 import static algorithm.MeasurementUtil.averageX;
 import static algorithm.MeasurementUtil.averageY;

@@ -1,4 +1,4 @@
-package algorithm.inhereitance;
+package algorithm.inheritance;
 
 import static algorithm.MeasurementUtil.sumX;
 import static algorithm.MeasurementUtil.sumY;
